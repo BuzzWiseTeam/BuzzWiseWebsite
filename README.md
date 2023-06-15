@@ -1,2 +1,1 @@
-# BuzzWiseWebsite
-Buzz Wise Landing Page Website.
+<h1 align="center">Buzz Wise Website</h1>
