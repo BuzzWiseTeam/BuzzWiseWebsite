@@ -1,0 +1,28 @@
+.logo-style {
+    width: 150px;
+    height:50px;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.support-image-bangkit {
+    width: 350px;
+    height: 350px;
+    margin-top: 0px;
+    margin-bottom: -300px;
+}
+
+.support-image-kampusmerdeka {
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+    margin-bottom: -65px;
+}
+
+.team-social-media {
+    padding-top: -10rem;
+    padding-bottom: -10rem;
+}
