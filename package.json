@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build src/tailwind.css -o assets/css/tailwind.css"
+    "build:css": "tailwind build ./src/tailwind.css -o ./public/css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BuzzWiseTeam/BuzzWiseWebsite"
   },
   "keywords": [],
   "author": "Billy Franscois",

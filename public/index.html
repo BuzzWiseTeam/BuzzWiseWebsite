@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 
 <head>
@@ -11,12 +11,30 @@
 
     <!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png"> -->
 
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/LineIcons.2.0.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.22.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.22.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.22.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.22.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.22.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.22.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.22.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.22.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.22.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.22.2/firebase-performance-compat.js"></script>
+    <!-- 
+          initialize the SDK after all desired features are loaded, set useEmulator to false
+          to avoid connecting the SDK to running emulators.
+        -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -115,7 +133,7 @@
             </div> <!-- container -->
         </div> <!-- navbar area -->
 
-        <div id="home" class="header-hero" style="background-image: url(assets/images/banner-bg.svg)">
+        <div id="home" class="header-hero" style="background-image: url(./images/banner-bg.svg)">
             <div class="container">
                 <div class="justify-center row">
                     <div class="w-full lg:w-2/3">
@@ -136,7 +154,7 @@
                     <div class="w-full lg:w-2/3">
                         <div class="text-center header-hero-image wow fadeIn" data-wow-duration="1.3s"
                             data-wow-delay="1.4s">
-                            <img src="assets/images/buzzwise.svg" alt="hero">
+                            <img src="./images/buzzwise.svg" alt="hero">
                         </div> <!-- header hero image -->
                     </div>
                 </div> <!-- row -->
@@ -162,8 +180,8 @@
                 <div class="w-full sm:w-2/3 lg:w-1/3">
                     <div class="single-services wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
+                            <img class="shape" src="./images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="./images/services-shape-1.svg" alt="shape">
                             <i class="lni lni-baloon"></i>
                         </div>
                         <div class="mt-8 services-content">
@@ -179,8 +197,8 @@
                     <div class="mt-8 text-center single-services wow fadeIn" data-wow-duration="1s"
                         data-wow-delay="0.5s">
                         <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
+                            <img class="shape" src="./images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="./images/services-shape-2.svg" alt="shape">
                             <i class="lni lni-cog"></i>
                         </div>
                         <div class="mt-8 services-content">
@@ -196,8 +214,8 @@
                     <div class="mt-8 text-center single-services wow fadeIn" data-wow-duration="1s"
                         data-wow-delay="0.8s">
                         <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
+                            <img class="shape" src="./images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="./images/services-shape-3.svg" alt="shape">
                             <i class="lni lni-bolt-alt"></i>
                         </div>
                         <div class="mt-8 services-content">
@@ -235,13 +253,13 @@
                 <div class="w-full lg:w-1/2">
                     <div class="mx-4 mt-12 text-center about-image wow fadeInRightBig" data-wow-duration="1s"
                         data-wow-delay="0.5s">
-                        <img src="assets/images/about1.svg" alt="about">
+                        <img src="./images/about1.svg" alt="about">
                     </div> <!-- about image -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
         <div class="about-shape-1">
-            <img src="assets/images/about-shape-1.svg" alt="shape">
+            <img src="./images/about-shape-1.svg" alt="shape">
         </div>
     </section>
     <!--====== ABOUT PART ENDS ======-->
@@ -249,7 +267,7 @@
     <!--====== ABOUT PART START ======-->
     <section class="relative pt-20 about-area">
         <div class="about-shape-2">
-            <img src="assets/images/about-shape-2.svg" alt="shape">
+            <img src="./images/about-shape-2.svg" alt="shape">
         </div>
         <div class="container">
             <div class="row">
@@ -270,13 +288,12 @@
                 <div class="w-full lg:w-1/2 lg:order-first">
                     <div class="mx-4 mt-12 text-center about-image wow fadeInRightBig" data-wow-duration="1s"
                         data-wow-delay="0.5s">
-                        <img src="assets/images/about2.svg" alt="about">
+                        <img src="./images/about2.svg" alt="about">
                     </div> <!-- about image -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
-
 
     <!--====== ABOUT PART START ======-->
     <section class="relative pt-20 about-area">
@@ -299,13 +316,13 @@
                 <div class="w-full lg:w-1/2">
                     <div class="mx-4 mt-12 text-center about-image wow fadeInRightBig" data-wow-duration="1s"
                         data-wow-delay="0.5s">
-                        <img src="assets/images/about3.svg" alt="about">
+                        <img src="./images/about3.svg" alt="about">
                     </div> <!-- about image -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
         <div class="about-shape-1">
-            <img src="assets/images/about-shape-1.svg" alt="shape">
+            <img src="./images/about-shape-1.svg" alt="shape">
         </div>
     </section>
     <!--====== ABOUT PART ENDS ======-->
@@ -505,7 +522,7 @@
                             <div class="rounded overflow-hidden shadow-md bg-white">
                                 <div class="absolute -mt-20 w-full flex justify-center">
                                     <div class="h-32 w-32">
-                                        <img src="./assets/images/Anin.png" alt="Anindya Sasriya Ibrahim" role="img"
+                                        <img src="./images/Anin.png" alt="Anindya Sasriya Ibrahim" role="img"
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
@@ -528,7 +545,8 @@
                                                 </svg> -->
                                             </div>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/anindya-sasriya-ibrahim-8119541b8" target="_blank" class="mx-5">
+                                        <a href="https://www.linkedin.com/in/anindya-sasriya-ibrahim-8119541b8"
+                                            target="_blank" class="mx-5">
                                             <div aria-label="Instagram" role="img">
                                                 <i class="lni lni-linkedin-original h-10 w-10"></i>
 
@@ -566,7 +584,7 @@
                             <div class="rounded overflow-hidden shadow-md bg-white">
                                 <div class="absolute -mt-20 w-full flex justify-center">
                                     <div class="h-32 w-32">
-                                        <img src="./assets/images/Jason.png" alt="Jason Suharyono" role="img"
+                                        <img src="./images/Jason.png" alt="Jason Suharyono" role="img"
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
@@ -589,7 +607,8 @@
                                                 </svg>
                                             </div> -->
                                         </a>
-                                        <a href="https://www.linkedin.com/in/jason-suharyono-07073924a" target="_blank" class="mx-5">
+                                        <a href="https://www.linkedin.com/in/jason-suharyono-07073924a" target="_blank"
+                                            class="mx-5">
                                             <div aria-label="Instagram" role="img">
                                                 <i class="lni lni-linkedin-original h-10 w-10"></i>
 
@@ -614,7 +633,7 @@
                             <div class="rounded overflow-hidden shadow-md bg-white">
                                 <div class="absolute -mt-20 w-full flex justify-center">
                                     <div class="h-32 w-32">
-                                        <img src="./assets/images/Lethfi.png" alt="Lethfi Novia" role="img"
+                                        <img src="./images/Lethfi.png" alt="Lethfi Novia" role="img"
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
@@ -637,7 +656,8 @@
                                                 </svg> -->
                                             </div>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/lethfi-novia-96b1731b4" target="_blank" class="mx-5">
+                                        <a href="https://www.linkedin.com/in/lethfi-novia-96b1731b4" target="_blank"
+                                            class="mx-5">
                                             <div aria-label="Instagram" role="img">
                                                 <i class="lni lni-linkedin-original h-10 w-10"></i>
 
@@ -662,7 +682,7 @@
                             <div class="rounded overflow-hidden shadow-md bg-white">
                                 <div class="absolute -mt-20 w-full flex justify-center">
                                     <div class="h-32 w-32">
-                                        <img src="./assets/images/Billy.png" alt="Billy Franscois" role="img"
+                                        <img src="./images/Billy.png" alt="Billy Franscois" role="img"
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
@@ -710,7 +730,7 @@
                             <div class="rounded overflow-hidden shadow-md bg-white">
                                 <div class="absolute -mt-20 w-full flex justify-center">
                                     <div class="h-32 w-32">
-                                        <img src="./assets/images/Ilma.png" alt="Ilma Aulia" role="img"
+                                        <img src="./images/Ilma.png" alt="Ilma Aulia" role="img"
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
@@ -758,7 +778,7 @@
                             <div class="rounded overflow-hidden shadow-md bg-white">
                                 <div class="absolute -mt-20 w-full flex justify-center">
                                     <div class="h-32 w-32">
-                                        <img src="./assets/images/Rifky.png" alt="Rifky Ubaidillah" role="img"
+                                        <img src="./images/Rifky.png" alt="Rifky Ubaidillah" role="img"
                                             class="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
@@ -781,7 +801,8 @@
                                                 </svg> -->
                                             </div>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/rifkyfahrizal/" target="_blank" class="mx-5">
+                                        <a href="https://www.linkedin.com/in/rifkyfahrizal/" target="_blank"
+                                            class="mx-5">
                                             <div aria-label="Instagram" role="img">
                                                 <i class="lni lni-linkedin-original h-10 w-10"></i>
 
@@ -824,13 +845,13 @@
                         <div class="single-logo hover:opacity-100 wow fadeIn support-image-bangkit"
                             data-wow-duration="1.5s" data-wow-delay="0.5s">
                             <a href="https://grow.google/intl/id_id/bangkit" target="_blank">
-                                <img src="assets/images/Bangkit-Logo.png" alt="Bangkit">
+                                <img src="./images/Bangkit-Logo.png" alt="Bangkit">
                             </a>
                         </div>
                         <div class="single-logo hover:opacity-100 wow fadeIn support-image-kampusmerdeka"
                             data-wow-duration="1.5s" data-wow-delay="0.5s">
                             <a href="https://kampusmerdeka.kemdikbud.go.id/" target="_blank">
-                                <img src="assets/images/kampusmerdeka.png" alt="Kampus Merdeka">
+                                <img src="./images/kampusmerdeka.png" alt="Kampus Merdeka">
                             </a>
                         </div>
                     </div>
@@ -1069,7 +1090,7 @@
 
     <!--====== FOOTER PART START ======-->
     <footer id="footer" class="relative z-10 footer-area pt-120">
-        <div class="footer-bg" style="background-image: url(assets/images/footer-bg.svg);"></div>
+        <div class="footer-bg" style="background-image: url(./images/footer-bg.svg);"></div>
         <div class="container">
             <div class="px-6 pt-10 pb-20 mb-12 bg-white rounded-lg shadow-xl md:px-12 subscribe-area wow fadeIn"
                 data-wow-duration="1s" data-wow-delay="0.5s">
@@ -1181,15 +1202,54 @@
 -->
     <!--====== PART ENDS ======-->
 
-    <script src="assets/js/vendor/jquery-3.5.1-min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const loadEl = document.querySelector('#load');
+          // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+          // // The Firebase SDK is initialized and available here!
+          //
+          // firebase.auth().onAuthStateChanged(user => { });
+          // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+          // firebase.firestore().doc('/foo/bar').get().then(() => { });
+          // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+          // firebase.messaging().requestPermission().then(() => { });
+          // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+          // firebase.analytics(); // call to activate
+          // firebase.analytics().logEvent('tutorial_completed');
+          // firebase.performance(); // call to activate
+          //
+          // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  
+          try {
+            let app = firebase.app();
+            let features = [
+              'auth', 
+              'database', 
+              'firestore',
+              'functions',
+              'messaging', 
+              'storage', 
+              'analytics', 
+              'remoteConfig',
+              'performance',
+            ].filter(feature => typeof app[feature] === 'function');
+            loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+          } catch (e) {
+            console.error(e);
+            loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+          }
+        });
+      </script> -->
+
+    <script src="./js/vendor/jquery-3.5.1-min.js"></script>
+    <script src="./js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
