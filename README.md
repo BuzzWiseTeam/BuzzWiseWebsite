@@ -4,5 +4,5 @@
 
 - Install all the dependencies `npm install`
 - Build the Tailwind CSS `npm run build:css`
-- Start the Tailwind CLI build process `npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css --watch`
-- Start the website locally with Firebase Emulator `firebase emulators:start`
+- Start the Tailwind CLI build process `npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch`
+- Start the website locally with Firebase Emulator `firebase emulators:start` or start the local server for development run `firebase serve`
