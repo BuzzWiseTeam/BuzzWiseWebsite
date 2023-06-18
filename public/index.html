@@ -68,7 +68,7 @@
                 <div class="row">
                     <div class="w-full">
                         <nav class="flex items-center justify-between navbar navbar-expand-lg">
-                            <a class="mr-4 navbar-brand" href="index.html">
+                            <a class="mr-4 navbar-brand" href="">
                                 <!-- <img class="logo-style" src="assets/images/Logo.png" alt="Logo"> -->
                                 <h1 class="text-white default-color text-2xl logo-text">Buzz Wise</h1>
                             </a>
@@ -1113,8 +1113,8 @@
                                     class="w-full py-4 pl-6 pr-40 duration-300 border-2 rounded focus:border-theme-color focus:outline-none"
                                     required>
                                 <button type="" class="main-btn gradient-btn">Subscribe</button>
-                                <div class="alert pt-3">Thanks to subscribe our Newsletter!</div>
                             </form>
+                            <div class="alert pt-3">Thanks to subscribe our Newsletter!</div>
                         </div>
                     </div>
                 </div>
@@ -1251,7 +1251,6 @@
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
-
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -1278,49 +1277,42 @@
         let emailSubscribeForm = firebase.database().ref("subscribe-newsletter");
 
         // Firebase Database integration
-        document.getElementById("subscribe-form").addEventListener("submit", SubmitSubscribeForm);
+        document.getElementById("subscribe-form").addEventListener("submit", submitSubscribeForm);
 
         // Remove the alert
-        document.querySelector(".alert").style.display = "none";
+        removeAlert();
 
         // Submit the subscribe form
-        function SubmitSubscribeForm(event) {
+        function submitSubscribeForm(event) {
             event.preventDefault();
 
             // Get the input value
             const email = document.getElementById("email-subscribe").value;
 
             if (email !== "") {
-                SaveSubscribeForm(email);
+                saveSubscribeForm(email);
 
-                // Enable alert
-                document.querySelector(".alert").style.display = "block";
+                displayAlert();
 
-                // Remove the alert
-                setTimeout(() => {
-                    document.querySelector(".alert").style.display = "none";
-                }, 3000);
+                refreshSubscribeForm();
 
-                RefreshSubscribeForm();
-
-                console.log(email); // DEBUG
-            }
-            else {
-                console.log("The form is still empty!"); // DEBUG
+                // console.log(email); // DEBUG
             }
         }
 
         // Save the subscribe email to the database
-        function SaveSubscribeForm(email) {
+        function saveSubscribeForm(email) {
             const newEmailSubscribe = emailSubscribeForm.push();
+            const createdAt = new Date().toISOString();
 
             newEmailSubscribe.set({
-                Email: email
+                email: email,
+                createdAt: createdAt
             });
         }
 
         // Refresh the subscribe form
-        function RefreshSubscribeForm() {
+        function refreshSubscribeForm() {
             document.getElementById("subscribe-form").reset();
         }
     </script>
@@ -1334,6 +1326,7 @@
     <script src="./js/wow.min.js"></script>
     <script src="./js/particles.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
